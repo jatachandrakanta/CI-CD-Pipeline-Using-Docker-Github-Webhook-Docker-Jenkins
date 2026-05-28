@@ -39,8 +39,8 @@ pipeline{
             }
     
 
-    }
-    stage('Send Email Notification'){
+        }
+        stage('Send Email Notification'){
             steps{
 
                 emailext(
@@ -50,5 +50,7 @@ pipeline{
                 )
             }
 
+        }
+   }
+
 }
-    }
